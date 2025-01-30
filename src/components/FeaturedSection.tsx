@@ -1,6 +1,7 @@
+"use client";
+
 import Link from "next/link";
 import courseData from "../data/music_courses.json";
-import { div } from "motion/react-client";
 import { BackgroundGradient } from "./ui/background-gradient";
 
 type Course = {
@@ -11,7 +12,6 @@ type Course = {
   price: number;
   instructor: string;
   isFeatured: boolean;
-  image: string;
 };
 
 function FeaturedSection() {
